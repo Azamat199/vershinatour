@@ -17,16 +17,20 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/iconFonts.css">
 	<link rel="stylesheet" href="Source/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="Source/lightgallery/lightgallery-bundle.min.css">
 </head>
 <body>
 <div class="wrapper">
 	<div class="header-video">
 		<div class="header-video__container">
 			<div class="offcanvas-menu-overlay"></div>
-			<header class="header">
+			<header class="header" id="header">
 				<div class="header-top">
-					<div class="header-menu__mobil-img">
-						<img src="img/logo/logogo.svg" alt="icon">
+					<div class="hide-mobile">
+						<a class="header-menu__mobil-img">
+							Vершина
+							<i class="_icon-logotip"></i>
+						</a>
 					</div>
 					<div class="container">
 						<div class="header-top__row">
@@ -57,15 +61,16 @@
 						<nav class="header-menu">
 							<div class="header-menu__left">
 								<a class="header-menu__logo" href="/">
-									<img src="img/logo/logogo.svg" alt="logo">
+									Vершина
+									<i class="_icon-logotip"></i>
 								</a>
 								<ul class="header-menu__list">
-									<li><a href="#">Главная</a></li>
-									<li><a href="#">Экскурсии</a></li>
-									<li><a href="#">Туры</a></li>
+									<li><a href="/">Главная</a></li>
+									<li><a href="./turs-page.html">Экскурсии</a></li>
+									<li><a href="./turs-page.html">Туры</a></li>
 									<li><a href="#">О нас</a></li>
-									<li><a href="#">Аренда жилья</a></li>
-									<li><a href="#">Контакты</a></li>
+									<li><a href="./rent.html">Аренда жилья</a></li>
+									<li><a href="./contacts.html">Контакты</a></li>
 								</ul>
 							</div>
 							<div class="header-menu__right">
@@ -104,7 +109,7 @@
 							<div class="header-bottom__subtitle">
 								Турфирма “Вершина” откроет Вам книгу в увлекательное и незабываемое путешествие, наполненное удивительными впечатлениями и яркими эмоциями.
 							</div>
-							<div class="header-bottom__btn">
+							<div class="header-bottom__btn --btn">
 								<a href="#">Перейти к экскурсиям</a>
 							</div>
 						</div>
@@ -115,11 +120,557 @@
 			</header>
 		</div>
 	</div>
+	<div class="interactive-block">
+		<img src="img/interactive/bg-1.png" alt="bg">
+	</div>
+	<div class="content">
+		<!-- О компании -->
+		<section class="about">
+			<div class="container">
+				<h2 class="about__title --title">О компани</h2>
+				<h3 class="about__subtitle --subtitle">Радуем Вас</h3>
+				<div class="about__row">
+					<div class="about__text">
+						Организовываем джип-туры по Дагестану. Встречаем в аэропорту. С
+						нами вы окунетесь в историю и национальный колорит Дагестана, посетите
+						архитектурные памятники, совершите прогулки на катерах и старому городу
+						Дербент, вдохнете прохладный и свежий горный воздух и насладитесь
+						пейзажами. Для любителей экстрима и адреналина есть возможность
+						совершить прыжок на тарзанке, пройти висячий мост. И, наконец, отведаете
+						национальные блюда. Посетив любой уголок нашего края, в вашем сердце
+						останутся неизгладимые впечатления, поймете, что значит кавказский дух и
+						гостеприимство.
+					</div>
+					<div class="about__video">
+						<img  src="img/Fon/Dagestan-3.jpg" alt="">
+						<i class="_icon-play2"></i>
+						<video id="video-about" controls playsinline src="img/video/fullcrtin.mp4" type='video/mp4'></video>
+					</div>
+				</div>
+				<div class="about__btn --btn">
+					<a href="#">Перейти в раздел "О компании"</a>
+				</div>
+			</div>
+		</section>
+		<!-- end  -->
+		<!-- Туры и экскурсии -->
+		<section class="main-tour">
+			<div class="container">
+				<h2 class="main-tour__title --title">Форматы туров</h2>
+				<h3 class="main-tour__subtitle --subtitle"> ВЫБИРАЙТЕ ТУРЫ С ИНТЕРЕСУЮЩИМИСИ ФОРМАТОМ</h3>
+			</div>
+			<div class="main-excursions">
+				<div class="container">
+					<div class="main-excursions__menu">
+						<h2 class="main-excursions__main-title">Экскурсии</h2>
+						<div class="main-excursions__menu-arrow">
+							<div class="swiper-button-prev-1 arrow-swiper"></div>
+							<div class="swiper-button-next-1 arrow-swiper"></div>
+						</div>	
+					</div>		
+					<div class="swiper main-excursions__swiper-excursions">
+						<div class="swiper-wrapper main-excursions__cards-wrapper">
+							<div class="swiper-slide main-excursions__cards-item">
+								<img class="swiper-lazy" data-src="img/Fon/Dagestan-1.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjMDY2/g8AAs8BmT556WsAAAAASUVORK5CYII=" alt="dag">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white turs-page-swiper__load"></div>
+								<a class="main-excursions__cards-link" href="#">
+									<div class="main-excursions__text-box">
+										<h3 class="main-excursions__title"> Сокровища Дагестана. Сулакский каньон и бархан Сарыкум</h3>
+										<div class="main-excursions__text-row">
+											<div class="main-excursions__row-left">3000<i class="_icon-rubl-regulyar"></i>/Чел</div>
+											<div class="main-excursions__row-right"> <i class="_icon-history"></i> 15 часов</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide main-excursions__cards-item">
+								<img class="swiper-lazy" data-src="img/Fon/Dagestan-1.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjMDY2/g8AAs8BmT556WsAAAAASUVORK5CYII=" alt="dag">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white turs-page-swiper__load"></div>
+								<a class="main-excursions__cards-link" href="#">
+									<div class="main-excursions__text-box">
+										<h3 class="main-excursions__title"> Сокровища Дагестана. Сулакский каньон и бархан Сарыкум</h3>
+										<div class="main-excursions__text-row">
+											<div class="main-excursions__row-left">3000<i class="_icon-rubl-regulyar"></i>/Чел</div>
+											<div class="main-excursions__row-right"> <i class="_icon-history"></i> 15 часов</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide main-excursions__cards-item">
+								<img class="swiper-lazy" data-src="img/Fon/Dagestan-1.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjMDY2/g8AAs8BmT556WsAAAAASUVORK5CYII=" alt="dag">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white turs-page-swiper__load"></div>
+								<a class="main-excursions__cards-link" href="#">
+									<div class="main-excursions__text-box">
+										<h3 class="main-excursions__title"> Дербент и лунь экраноплан</h3>
+										<div class="main-excursions__text-row">
+											<div class="main-excursions__row-left">3000<i class="_icon-rubl-regulyar"></i>/Чел</div>
+											<div class="main-excursions__row-right"> <i class="_icon-history"></i> 15 часов</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide main-excursions__cards-item">
+								<img class="swiper-lazy" data-src="img/Fon/Dagestan-1.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjMDY2/g8AAs8BmT556WsAAAAASUVORK5CYII=" alt="dag">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white turs-page-swiper__load"></div>
+								<a class="main-excursions__cards-link" href="#">
+									<div class="main-excursions__text-box">
+										<h3 class="main-excursions__title"> Дербент и лунь экраноплан</h3>
+										<div class="main-excursions__text-row">
+											<div class="main-excursions__row-left">3000<i class="_icon-rubl-regulyar"></i>/Чел</div>
+											<div class="main-excursions__row-right"> <i class="_icon-history"></i> 15 часов</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide main-excursions__cards-item">
+								<img class="swiper-lazy" data-src="img/Fon/Dagestan-1.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjMDY2/g8AAs8BmT556WsAAAAASUVORK5CYII=" alt="dag">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white turs-page-swiper__load"></div>
+								<a class="main-excursions__cards-link" href="#">
+									<div class="main-excursions__text-box">
+										<h3 class="main-excursions__title"> Дербент и лунь экраноплан</h3>
+										<div class="main-excursions__text-row">
+											<div class="main-excursions__row-left">3000<i class="_icon-rubl-regulyar"></i>/Чел</div>
+											<div class="main-excursions__row-right"> <i class="_icon-history"></i> 15 часов</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="main-excursions__menu">
+						<h2 class="main-excursions__main-title">Туры</h2>
+						<div class="main-excursions__menu-arrow">
+							<div class="swiper-button-prev arrow-swiper"></div>
+							<div class="swiper-button-next arrow-swiper"></div>
+						</div>	
+					</div>		
+					<div class="swiper main-excursions__swiper">
+						<div class="swiper-wrapper main-excursions__cards-wrapper">
+							<div class="swiper-slide main-excursions__cards-item">
+								<img class="swiper-lazy" data-src="img/Fon/Dagestan-1.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjMDY2/g8AAs8BmT556WsAAAAASUVORK5CYII=" alt="dag">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white turs-page-swiper__load"></div>
+								<a class="main-excursions__cards-link" href="#">
+									<div class="main-excursions__text-box">
+										<h3 class="main-excursions__title"> Сокровища Дагестана. Сулакский каньон и бархан Сарыкум</h3>
+										<div class="main-excursions__text-row">
+											<div class="main-excursions__row-left">3000<i class="_icon-rubl-regulyar"></i>/Чел</div>
+											<div class="main-excursions__row-right"> <i class="_icon-history"></i> 15 часов</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide main-excursions__cards-item">
+								<img class="swiper-lazy" data-src="img/Fon/Dagestan-1.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjMDY2/g8AAs8BmT556WsAAAAASUVORK5CYII=" alt="dag">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white turs-page-swiper__load"></div>
+								<a class="main-excursions__cards-link" href="#">
+									<div class="main-excursions__text-box">
+										<h3 class="main-excursions__title"> Сокровища Дагестана. Сулакский каньон и бархан Сарыкум</h3>
+										<div class="main-excursions__text-row">
+											<div class="main-excursions__row-left">3000<i class="_icon-rubl-regulyar"></i>/Чел</div>
+											<div class="main-excursions__row-right"> <i class="_icon-history"></i> 15 часов</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide main-excursions__cards-item">
+								<img class="swiper-lazy" data-src="img/Fon/Dagestan-1.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjMDY2/g8AAs8BmT556WsAAAAASUVORK5CYII=" alt="dag">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white turs-page-swiper__load"></div>
+								<a class="main-excursions__cards-link" href="#">
+									<div class="main-excursions__text-box">
+										<h3 class="main-excursions__title"> Дербент и лунь экраноплан</h3>
+										<div class="main-excursions__text-row">
+											<div class="main-excursions__row-left">3000<i class="_icon-rubl-regulyar"></i>/Чел</div>
+											<div class="main-excursions__row-right"> <i class="_icon-history"></i> 15 часов</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide main-excursions__cards-item">
+								<img class="swiper-lazy" data-src="img/Fon/Dagestan-1.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjMDY2/g8AAs8BmT556WsAAAAASUVORK5CYII=" alt="dag">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white turs-page-swiper__load"></div>
+								<a class="main-excursions__cards-link" href="#">
+									<div class="main-excursions__text-box">
+										<h3 class="main-excursions__title"> Дербент и лунь экраноплан</h3>
+										<div class="main-excursions__text-row">
+											<div class="main-excursions__row-left">3000<i class="_icon-rubl-regulyar"></i>/Чел</div>
+											<div class="main-excursions__row-right"> <i class="_icon-history"></i> 15 часов</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide main-excursions__cards-item">
+								<img class="swiper-lazy" data-src="img/Fon/Dagestan-1.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjMDY2/g8AAs8BmT556WsAAAAASUVORK5CYII=" alt="dag">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white turs-page-swiper__load"></div>
+								<a class="main-excursions__cards-link" href="#">
+									<div class="main-excursions__text-box">
+										<h3 class="main-excursions__title"> Дербент и лунь экраноплан</h3>
+										<div class="main-excursions__text-row">
+											<div class="main-excursions__row-left">3000<i class="_icon-rubl-regulyar"></i>/Чел</div>
+											<div class="main-excursions__row-right"> <i class="_icon-history"></i> 15 часов</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end  -->
+		<!-- Преимущества -->
+		<section class="benefits">
+			<div class="container">
+				<div class="benefits__row">
+					<div class="benefits__item">
+						<div class="benefits__item-container">
+							<div class="benefits__item-top">
+								<i class="_icon-confidence"></i>
+							</div>
+							<div class="benefits__item-text">
+								Надежность - наше второе имя
+							</div>
+						</div>
+					</div>
+					<div class="benefits__item">
+						<div class="benefits__item-container">
+							<div class="benefits__item-top">
+
+								<i class="_icon-hotel"></i>
+							</div>
+							<div class="benefits__item-text">
+								Размещение в уютных отелях
+							</div>
+						</div>
+					</div>
+					<div class="benefits__item">
+						<div class="benefits__item-container">
+							<div class="benefits__item-top">
+
+								<i class="_icon-autobus"></i>
+							</div>
+							<div class="benefits__item-text">
+								Комфортабельный трансфер
+							</div>
+						</div>
+					</div>
+					<div class="benefits__item">
+						<div class="benefits__item-container">
+							<div class="benefits__item-top">
+
+								<i class="_icon-pitanie"></i>
+							</div>
+							<div class="benefits__item-text">
+								Питание в заведениях локальной кухни
+							</div>
+						</div>
+					</div>
+					<div class="benefits__item">
+						<div class="benefits__item-container">
+							<div class="benefits__item-top">
+								<i class="_icon-money1"></i>
+							</div>
+							<div class="benefits__item-text">
+								Доступные цены
+							</div>
+						</div>
+					</div>
+					<div class="benefits__item">
+						<div class="benefits__item-container">
+							<div class="benefits__item-top">
+								
+								<i class="_icon-gids"></i>
+							</div>
+							<div class="benefits__item-text">
+								Квалифицированные и опытные гиды
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end  -->
+		<!-- Услуги -->
+		<section class="services">
+			<div class="container">
+				<h2 class="services__title --title">Реализуем любые идеи наших гостей</h2>
+				<h3 class="services__subtitle --subtitle">Будьте с нами</h3>
+				<div class="services__row">
+					<div class="services__item">
+						<div class="services__top">
+							<img src="img/Fon/Dagestan-3.jpg" alt="picteris">
+						</div>
+						<div class="services__bottom">
+							<span>Катания на джипах в горах</span>
+						</div>
+					</div>
+					<div class="services__item">
+						<div class="services__top">
+							<img src="img/Fon/Dagestan-3.jpg" alt="picteris">
+						</div>
+						<div class="services__bottom">
+							<span>Зиплайн</span>
+						</div>
+					</div>
+					<div class="services__item">
+						<div class="services__top">
+							<img src="img/Fon/Dagestan-3.jpg" alt="picteris">
+						</div>
+						<div class="services__bottom">
+							<span>Рафтинг</span>
+						</div>
+					</div>
+					<div class="services__item">
+						<div class="services__top">
+							<img src="img/Fon/Dagestan-3.jpg" alt="picteris">
+						</div>
+						<div class="services__bottom">
+							<span>Треккинг по горам</span>
+						</div>
+					</div>
+					<div class="services__item">
+						<div class="services__top">
+							<img src="img/Fon/Dagestan-3.jpg" alt="picteris">
+						</div>
+						<div class="services__bottom">
+							<span>Прогулки на лошадях</span>
+						</div>
+					</div>
+					<div class="services__item">
+						<div class="services__top">
+							<img src="img/Fon/Dagestan-3.jpg" alt="picteris">
+						</div>
+						<div class="services__bottom">
+							<span>Прогулка на катере</span>
+						</div>
+					</div>
+					<div class="services__item">
+						<div class="services__top">
+							<img src="img/Fon/Dagestan-3.jpg" alt="picteris">
+						</div>
+						<div class="services__bottom">
+							<span>Квадро туры (катание на квадроциклах)</span>
+						</div>
+					</div>
+					<div class="services__item">
+						<div class="services__top">
+							<img src="img/Fon/Dagestan-3.jpg" alt="picteris">
+						</div>
+						<div class="services__bottom">
+							<span>Ужин в ресторане</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end  -->
+		<!-- Галерея -->
+		<section class="gallery">
+			<div class="container">
+				<!-- <h2 class="gallery__title --title">Испытайте особые ощущения</h2>
+				<h3 class="gallery__subtitle --subtitle">Галерея впечатлений</h3> -->
+			</div>
+			<div class="gallery__row">
+				<div class="gallery__item">
+					<img src="img/Fon/Dagestan-2.jpg" alt="gallery">
+				</div>
+				<div class="gallery__item">
+					<img src="img/Fon/Dagestan-2.jpg" alt="gallery">
+				</div>
+				<div class="gallery__item">
+					<img src="img/Fon/Dagestan-2.jpg" alt="gallery">
+				</div>
+				<div class="gallery__item">
+					<img src="img/Fon/Dagestan-2.jpg" alt="gallery">
+				</div>
+				<div class="gallery__item">
+					<img src="img/Fon/Dagestan-2.jpg" alt="gallery">
+				</div>
+				<div class="gallery__item">
+					<img src="img/Fon/Dagestan-2.jpg" alt="gallery">
+				</div>
+				<div class="gallery__item">
+					<img src="img/Fon/Dagestan-2.jpg" alt="gallery">
+				</div>
+				<div class="gallery__item">
+					<img src="img/Fon/Dagestan-2.jpg" alt="gallery">
+				</div>
+				<div class="gallery__item">
+					<img src="img/Fon/Dagestan-2.jpg" alt="gallery">
+				</div>
+				<div class="gallery__item">
+					<img src="img/Fon/Dagestan-2.jpg" alt="gallery">
+				</div>
+				<div class="gallery__item">
+					<img src="img/Fon/Dagestan-2.jpg" alt="gallery">
+				</div>
+				<div class="gallery__item">
+					<img src="img/Fon/Dagestan-2.jpg" alt="gallery">
+				</div>
+			</div>
+		</section>
+		<!-- end  -->
+		<!-- Выбор тура -->
+		<section class="choice">
+			<div class="container">
+				<h2 class="choice__title --title">Есть сложности в воборе тура?</h2>
+				<h3 class="choice__subtitle --subtitle">Мы поможем</h3>
+				<div class="choice__text">
+					Заполните простую анкету и мы подберем для вас лучшие варианты
+				</div>
+				<div class="choice__form">
+
+				</div>
+				<div class="choice__subtext">
+					Заполнение анкеты ни к чему не обязывает. Наши менеджеры всегда готовы помочь с выбором, или составлением индивидуального тура
+				</div>
+				<div class="choice__bottom">
+					<div class="choice__bottom-text">
+						Или свяжитесь напрямую удобным вам способом:
+					</div>
+					<ul class="choice__bottom-social">
+						<li><a class="_icon-phone" href="#"></a></li>
+						<li><a class="_icon-telega" href="#"></a></li>
+						<li><a class="_icon-whatsapp" href="#"></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- end  -->
+		<!-- Вопросы/ответы -->
+		<section class="questions">
+			<div class="container">
+				<h2 class="questions__title --title">Вопрос/Ответ</h2>
+				<h3 class="questions__subtitle --subtitle">МЫ СОБРАЛИ ОТВЕТЫ НА САМЫЕ ЧАСТЫЕ ВОЗНИКАЮЩИЕ ВОПРОСЫ</h3>
+				<div class="questions__accordion accordion">
+					<div class="accordion__row">
+						<div class="accordion__left">Безопасно ли в Дагестане?</div>
+						<div class="accordion__right"><span></span></div>
+					</div>
+					<div class="accordion__text">
+						В Дагестане безопасно ровно также , как и в любом другом регионе РФ. В добавок к этому, здесь очень гостеприимно и заботливо. К тому же, наши гиды с Вами до конца дня и на связи даже ночью.
+					</div>
+				</div>
+				<div class="questions__accordion accordion">
+					<div class="accordion__row">
+						<div class="accordion__left">Дресс-код одежды. Как можно одеваться и как не стоит?</div>
+						<div class="accordion__right"><span></span></div>
+					</div>
+					<div class="accordion__text">
+						В связи с особенностью местного менталитета мы рекомендуем придерживаться следующих норм:
+						— Одежда не должна быть вызывающей (юбки и шорты выше колена, открытые топы и майки)
+						— При входе в мечеть или другие святые места надевать косынку (женщинам)
+						— Рекомендуем взять с собой джинсы, футболки , юбки (ниже колена), сарафаны и туники
+					</div>
+				</div>
+				<div class="questions__accordion accordion">
+					<div class="accordion__row">
+						<div class="accordion__left">Безопасно ли в Дагестане?</div>
+						<div class="accordion__right"><span></span></div>
+					</div>
+					<div class="accordion__text">
+						В Дагестане безопасно ровно также , как и в любом другом регионе РФ. В добавок к этому, здесь очень гостеприимно и заботливо. К тому же, наши гиды с Вами до конца дня и на связи даже ночью.
+					</div>
+				</div>
+				<div class="questions__accordion accordion">
+					<div class="accordion__row">
+						<div class="accordion__left">Безопасно ли в Дагестане?</div>
+						<div class="accordion__right"><span></span></div>
+					</div>
+					<div class="accordion__text">
+						В Дагестане безопасно ровно также , как и в любом другом регионе РФ. В добавок к этому, здесь очень гостеприимно и заботливо. К тому же, наши гиды с Вами до конца дня и на связи даже ночью.
+					</div>
+				</div>
+				<div class="questions__accordion accordion">
+					<div class="accordion__row">
+						<div class="accordion__left">Безопасно ли в Дагестане?</div>
+						<div class="accordion__right"><span></span></div>
+					</div>
+					<div class="accordion__text">
+						В Дагестане безопасно ровно также , как и в любом другом регионе РФ. В добавок к этому, здесь очень гостеприимно и заботливо. К тому же, наши гиды с Вами до конца дня и на связи даже ночью.
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end  -->
+	</div>
+	<footer class="footer ">
+		<div class="container">
+			<div class="footer__top">
+				<div class="footer__row">
+					<div class="footer__item">
+						<div class="footer__logo">
+							<a href="/">
+								Vершина
+								<i class="_icon-logotip"></i>
+							</a>
+						</div>
+						<div class="footer__text">
+							Путешествовать — значит жить. Окунитесь в прекраснейшую горную республику вместе с нами.
+						</div>
+					</div>
+					<div class="footer__item">
+						<div class="footer__title">
+							Контакты
+						</div>
+						<div class="footer__box-contact">
+							<div class="footer__contacts">
+								<a class="_icon-phone1" href="tel:8928 676-99-22">8928 676-99-22</a>
+							</div>
+							<div class="footer__contacts">
+								<a class="_icon-envelope" href="mailto:info@vershinatour.ru">info@vershinatour.ru</a>
+							</div>
+							<div class="footer__contacts">
+								<a class="_icon-location" href="https://2gis.ru/makhachkala">р. Дагестан, г. Махачкала</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__item">
+						<div class="footer__title">
+							Компания
+						</div>
+						<nav class="footer__menu">
+							<ul class="footer__list">
+								<li><a href="#">
+									О компании
+								</a></li>
+								<li><a href="#">
+									Туры
+								</a></li>
+								<li><a href="#">
+									Экскурсии
+								</a></li>
+								<li><a href="#">
+									Политика конфиденциальности
+								</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__item">
+						<div class="footer__title">
+							Социальные сети
+						</div>
+						<div class="footer__social">
+							<div class="footer__contacts">
+								<a href="#"><i class="_icon-whatsapp"></i></a>
+							</div>
+							<div class="footer__contacts">
+								<a href="#"><i class="_icon-telega"></i></a>
+							</div>
+							<div class="footer__contacts">
+								<a href="#"><i class="_icon-vkontakte"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 </div>
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script src="Source/swiper/swiper-bundle.min.js"></script>
+<script src="Source/lightgallery/lightgallery.min.js"></script>
 <script src="js/app.js"></script>
 
 </body>
